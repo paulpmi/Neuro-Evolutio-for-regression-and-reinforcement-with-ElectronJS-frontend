@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Main Page</title>
+<link rel="stylesheet" href="./index.css">
+
+</head>
+
+<header class="SelectLearningType">
+    Run Deterministic
+    <input type="radio" id="deterministicButton" name="learningType" checked="checked"/>
+    Run Reinforcement
+    <input type="radio" id="reinforcementButton" name="learningType"/>
+</header>
+
+<body style="background-color: azure">
+    <div class="ContentWrapper">
+    <div class="MainForm">
+        <div class="NodesWrapper">
+            <span> Population Number: </span>
+            <input id="NumberPickerPopulation" type="number"/>
+        </div>
+
+        <div class="NodesWrapper">
+            <span> IterationNumber: </span> 
+            <input id="NumberPickerIteration" type="number"/>
+        </div>
+
+        <div class="NodesWrapper">
+            <span> Nr. Input Nodes: </span> 
+            <input id="NumberPickerInput" type="number"/>
+        </div>
+
+        <div class="NodesWrapper">
+            <span> Nr. Hidden Nodes: </span> 
+            <input id="NumberPickerHidden" type="number"/>
+        </div>
+        
+        <div class="NodesWrapper">
+            <span> Nr. Output Nodes: </span>
+            <input id="NumberPickerOutput" type="number"/>
+        </div>
+
+        <div class="NodesWrapper">
+            <span> Nr. Hidden Layers: </span>
+            <input id="NumberPickerLayers" type="number"/>
+        </div>
+
+        <div id="DeterministicWrapper">
+            <div class="TestWrapper">
+                <span>Run Test ?: </span>
+                <input type="radio" name="game" id="Test"/>
+            </div>
+            <button id="RunDeterministicButton" onclick="runDeterministic()"> Run Deterministic</button>
+        </div>
+        <div id="ReinforcementWrapper">
+            <span> Select Game: </span>
+            <div class="GameSelecter">
+                <span>CartPole-v0</span>
+                <input type="radio" name="game" id="CartPole-v0"/>
+                <span>MountainCarContinuous-v0</span>
+                <input type="radio" name="game" id="MountainCarContinuous-v0"/>
+            </div>
+            <button class="RunReinforcementButton" onclick="runReinforcement()"> Run Reinforcement </button>
+            
+        </div>
+    </div>
+
+    </div>
+
+    <script src="./hider.js"> </script>
+    <script src="./processRunner.js"> </script>
+</body>
+
+</html>

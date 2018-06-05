@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+
+.ContentWrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+.NodesWrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.NumberPicker{
+    text-align: center;
+}
+
+
+#DeterministicWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#ReinforcementWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.MainForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#RunDeterministicButton{
+    align-self: center;
+    margin: 10px;
+    border-radius: 2px;
+    background-color: #07386c;
+    color: azure;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+span{
+    text-align: center;
+}
+
+#NumberPickerPopulation{
+    text-align: center;
+}
+
+#NumberPickerIteration{
+    text-align: center;
+}
+
+#NumberPickerInput{
+    text-align: center;
+}
+
+#NumberPickerHidden{
+    text-align: center;
+}
+
+#NumberPickerOutput{
+    text-align: center;
+}
+
+#NumberPickerLayers{
+    text-align: center;
+}
+
+.SelectLearningType{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.TestWrapper{
+    text-align: center;
+}
